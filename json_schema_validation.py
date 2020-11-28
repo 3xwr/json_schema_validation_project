@@ -31,7 +31,7 @@ def betterErrorMessages(validation_error):
     else:
         return validation_error
 
-readme_file = open("readme.md", "w")
+readme_file = open("readme.txt", "w")
 
 json_dir = 'event/'
 schema_dir = 'schema/'
