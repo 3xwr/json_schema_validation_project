@@ -1,3 +1,7 @@
+Для корректной работы перед запуском:
+$ pip install jsonschema
+
+Пример работы скрипта:
 
 Logs for JSON file #1 (ffe6b214-d543-40a8-8da3-deb0dc5bbd8c.json):
 Trying schema #1 (sleep_created.schema) for JSON file #1:
