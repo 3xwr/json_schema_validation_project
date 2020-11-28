@@ -2,17 +2,17 @@
 Logs for JSON file #1 (ffe6b214-d543-40a8-8da3-deb0dc5bbd8c.json):
 Trying schema #1 (sleep_created.schema) for JSON file #1:
 -------
--Your object doesn't have the 'source' property, which is required by the corresponding schema
--Your object doesn't have the 'timestamp' property, which is required by the corresponding schema
--Your object doesn't have the 'finish_time' property, which is required by the corresponding schema
--Your object doesn't have the 'activity_type' property, which is required by the corresponding schema
--Your object doesn't have the 'time_start' property, which is required by the corresponding schema
--Your object doesn't have the 'unique_id' property, which is required by the corresponding schema
+-Your object doesn't have the 'source' property, which is required by the corresponding schema <br />
+-Your object doesn't have the 'timestamp' property, which is required by the corresponding schema <br />
+-Your object doesn't have the 'finish_time' property, which is required by the corresponding schema <br />
+-Your object doesn't have the 'activity_type' property, which is required by the corresponding schema <br />
+-Your object doesn't have the 'time_start' property, which is required by the corresponding schema <br />
+-Your object doesn't have the 'unique_id' property, which is required by the corresponding schema <br />
 
 Trying schema #2 (label_selected.schema) for JSON file #1:
 -------
--Your object doesn't have the 'labels' property, which is required by the corresponding schema
--Your object doesn't have the 'rr_id' property, which is required by the corresponding schema
+-Your object doesn't have the 'labels' property, which is required by the corresponding schema <br />
+-Your object doesn't have the 'rr_id' property, which is required by the corresponding schema <br />
 -Your object doesn't have the 'timestamp' property, which is required by the corresponding schema
 -Your object doesn't have the 'unique_id' property, which is required by the corresponding schema
 -Your object doesn't have the 'user' property, which is required by the corresponding schema
