@@ -11,7 +11,7 @@ def validateJson(jsonData, testSchema):
     
     for error in errors:
         error_msg = betterErrorMessages(str(error.message))
-        readme_file.write('- ' + error_msg)
+        readme_file.write(error_msg)
         readme_file.write('\n')
 
 def betterErrorMessages(validation_error):
