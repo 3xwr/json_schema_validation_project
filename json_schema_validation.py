@@ -12,7 +12,7 @@ def validateJson(jsonData, testSchema):
     for error in errors:
         error_msg = betterErrorMessages(str(error.message))
         readme_file.write(error_msg)
-        readme_file.write('\n------------\n')
+        readme_file.write('\n')
 
 def betterErrorMessages(validation_error):
     '''
@@ -46,13 +46,14 @@ for json_file in json_files:
     schema_counter = 1
     my_json_file = open(json_dir + json_file.name)
     json_contents = json.loads(my_json_file.read())
-    readme_file.write("\nLogs for JSON file #" + str(json_counter) + " (" + json_file.name +"):\n\n")
+    readme_file.write("\nLogs for JSON file #" + str(json_counter) + " (" + json_file.name +"):")
     print("\nWriting logs for JSON file #"+ str(json_counter) + " (" + json_file.name +"):")
     #print(json_contents)
     
     schema_files = os.scandir(schema_dir)
     for schema_file in schema_files:
-        readme_file.write("\nTrying schema #" + str(schema_counter) + " (" + schema_file.name +")" +" for JSON file #" + str(json_counter) + ":\n\n" )
+        readme_file.write("\nTrying schema #" + str(schema_counter) + " (" + schema_file.name +")" +" for JSON file #" + str(json_counter) + ":" )
+        readme_file.write('\n-------\n')
         print("\nTrying schema #" + str(schema_counter) + " (" + schema_file.name +")" +" for JSON file #" + str(json_counter))
         my_schema_file = open(schema_dir + schema_file.name)
         schema_contents = json.loads(my_schema_file.read())
@@ -60,7 +61,8 @@ for json_file in json_files:
         schema_counter += 1
 
         my_schema_file.close()
-    
+        
+    readme_file.write('\n\n')
     print('------------')
     json_counter = json_counter+1
     my_json_file.close()
